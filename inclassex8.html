@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- 9/27/2021 in class ex 8-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Old MacDonald</title>
+    <script type="text/javascript">
+        animal = window.prompt("Enter an animal", "Cow");
+        sound = window.prompt("Enter the sound the ", animal, " makes");
+
+        function oldMacDonald() {
+            document.writeln("Old MacDonald had a farm <br> E-I-E-I-O");
+            animalVerse(animal, sound);
+        }
+
+        function animalVerse(animal, sound) {
+            document.writeln("<br> And on that farm he had a ", animal, "<br> E-I-E-I-O");
+            document.writeln("<br> with a ", sound, " ", sound, " here");
+            document.writeln("<br> and a ", sound, " ", sound, " there");
+            document.writeln("<br>Here a ", sound, ", there a ", sound);
+            document.writeln("<br>Everywhere a ", sound, " ", sound);
+        }
+
+        window.addEventListener("load", oldMacDonald, false);
+        oldMacDonald();
+        oldMacDonald();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

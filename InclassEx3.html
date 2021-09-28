@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Inclass Ex2 -->
+<!-- By: Samer Al-khateeb-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Inclass Ex2</title>
+
+   </head>
+
+   	<body>
+   	
+   		<header>
+            <h1>Creighton Restaurant</h1>
+            <p>Welcome to our <span id="highlight">fictitious resturant</span>. Please customize your order and click the submit button. <span>We will call you to pick up your order once it is ready!</span></p>
+
+
+         </header>
+
+
+
+      	<p><img src = "background_image1.jpg" class = "background_images"
+         alt = "First positioned image" /></p>
+
+      	<p><img src = "background_image2.jpeg" class = "background_images"
+         alt = "Second positioned image" /></p>   
+      
+      	<p><img src = "background_image3.jpg" class = "background_images"
+         alt = "Third positioned image" /></p> 
+
+      	<form method = "post" action = "https://www.creighton.edu" autocomplete="on">
+         	<p>
+            	<label>Full Name:
+               		<input type = "text" autofocus placeholder="John Doe" required id="fullname" /> 
+                  Please enter your first name and last name.
+            	</label>
+         	</p>
+		
+			<p>
+				<label for = "txtList">Pick Your Order:
+            		<input type = "text" id = "txtList" placeholder = "Select from the menu" list = "menu" />
+            			<datalist id = "menu">
+               				<option value = "Burger Sandwich">
+               				<option value = "Cheese Pizza">
+               				<option value = "Caesar Salad">  
+            			</datalist>
+        		</label>
+        	</p>
+
+        	<p>
+         		<label> pick your order:
+        			<datalist id = "menu1">
+               			<option value = "Burger Sandwich">
+               			<option value = "Cheese Pizza">
+               			<option value = "Caesar Salad">  
+            		</datalist>
+         		</label>      
+        	</p>	
+
+         	<p>
+            	<label>Enter the number of Green Teas you would like:
+               		<input type = "number" 
+                  			min = "0"
+                  			max = "7"
+                  			step = "1"
+                  			value = "0" />
+            	</label> (Enter a number between 0 and 7)
+         	</p>
+         
+         	<p>
+            	<label>Email:
+               		<input type = "email" placeholder = "email@domain.com" 
+                  required multiple/> Please enter your email address to receive your order confirmation receipt.
+            	</label>
+         	</p>
+         
+         	<p>
+            	<label>Telephone:
+               		<input type = "tel" placeholder = "(###) ###-####" 
+                  pattern = "\(\d{3}\) +\d{3}-\d{4}" required /> 
+                  Please enter your phone number so we can give you a call once your order is ready for pick up!
+            	</label>
+         	</p>
+         	
+         	<p>
+            	<label>Please tell us which website you used to hear about us:
+               		<input type = "url" placeholder = "http://www.domainname.com" /> 
+                  the correct website should have the following format http://www.domainname.com
+            	</label>
+         	</p>
+         
+         	<p>
+            	<label>Please enter the time you made your order:
+               		<input type = "datetime-local" placeholder = "mm/dd/yyyy hh:mm mm" />     
+            	</label>
+         	</p>
+
+         	<p>
+            	<input type = "submit" value = "Submit" />
+            	<input type = "reset" value = "Clear" />
+         	</p>  
+
+      	</form>
+   	
+   		<footer>
+   			<p>If you have a question about our resturant or have a suggestion to imporove our website please call us on 1(800) 000-0000. </p>
+
+            <p>You can also drop by as we are located on <span id="special">Dodge St & N 24th St, Omaha, NE 68131</span>. </p>
+   		</footer>       
+   	</body>
+</html>
+  
+
+

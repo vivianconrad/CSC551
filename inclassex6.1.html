@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>In Class Ex 6.1</title>
+    <script type="text/javascript">
+        var time;
+        time = parseInt(window.prompt("Please enter how long you have been waiting at the signal (in seconds)"));
+
+        if (time < 15) {
+            document.write("<h3 style='color:red'>")
+            document.write("Stop" + "</h3>")
+        } else if (time > 50) {
+            document.write("<h3 style='color:green'>")
+            document.write("Go" + "</h3>")
+        } else {
+            document.write("<h3 style='color:yellow'>")
+            document.write("Wait" + "</h3>")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

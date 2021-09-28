@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>In Class Ex 6.3</title>
+    <table>
+
+        <script type="text/javascript">
+            var x;
+            var y;
+            var z;
+            var rows;
+            var cols;
+
+            function makeTable(rows, cols) {
+                var table = document.createElement('table');
+                table.setAttribute('border', '1')
+
+                for (let i = 0; i < rows; i++) {
+                    x *= 10;
+                    y *= 100;
+                    z *= 1000;
+                    var tRow = document.createElement('tr');
+                    for (let j = 0; j < cols; j++) {
+                        var nTen = document.createElement('td');
+                        nTen.textContent = x;
+                        tRow.appendChild(nTen)
+                        var nHund = document.createElement('td');
+                        nHund.textContent = y;
+                        tRow.appendChild(nHund);
+                    }
+
+                    table.appendChild(tRow);
+                    document.body.appendChild(table);
+
+                }
+            }
+            makeTable(6, 4);
+        </script>
+    </table>
+</head>
+
+<body>
+
+</body>
+
+</html>

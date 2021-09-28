@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!-- basic calculator -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple Calculator</title>
+    <script type="text/javascript">
+        window.alert("Welcome to Vi/'s simple calculator. Enter two numbers")
+        var x = parseInt(window.prompt("Please enter a value for x"));
+        var y = parseInt(window.prompt("Please enter a value for y"));
+
+        window.alert("The value of x + y is " + (x + y));
+        window.alert("The value of x - y is " + (x - y));
+        window.alert("The value of x * y is " + (x * y));
+        window.alert("The value of x / y is " + (x / y));
+
+        var firstNum = parseInt(window.prompt("Please enter a value for your first number"));
+        var secondNum = parseInt(window.prompt("Please enter a value for your second number"));
+        var thirdNum = parseInt(window.prompt("Please enter a value for your third number"));
+        var fourthNum = parseInt(window.prompt("Please enter a value for your fourth number"));
+        var fifthNum = parseInt(window.prompt("Please enter a value for your fifth number"));
+
+        //test
+        // var firstNum = 8;
+        // var secondNum = 7;
+        // var thirdNum = 6;
+        // var fourthNum = 5;
+        // var fifthNum = 4;
+
+        if (firstNum > secondNum && thirdNum && fourthNum && fifthNum)
+            window.alert("the largest integer is" + firstNum)
+
+        if (secondNum > firstNum && thirdNum && fourthNum && fifthNum)
+            window.alert("the largest integer is" + secondNum)
+
+        if (thirdNum > secondNum && firstNum && fourthNum && fifthNum)
+            window.alert("the largest integer is" + thirdNum)
+
+        if (fourthNum > secondNum && thirdNum && firstNum && fifthNum)
+            window.alert("the largest integer is" + fourthNum)
+
+        if (fifthNum > secondNum && thirdNum && fourthNum && firstNum)
+            window.alert("the largest integer is" + fifthNum)
+
+
+        if (firstNum < secondNum && thirdNum && fourthNum && fifthNum)
+            window.alert("the smallest integer is" + firstNum)
+
+        else if (secondNum < firstNum && thirdNum && fourthNum && fifthNum)
+            window.alert("the smallest integer is" + secondNum)
+
+        else if (thirdNum < secondNum && firstNum && fourthNum && fifthNum)
+            window.alert("the smallest integer is" + thirdNum)
+
+        else if (fourthNum < secondNum && thirdNum && firstNum && fifthNum)
+            window.alert("the smallest integer is" + fourthNum)
+
+        else if (fifthNum < secondNum && thirdNum && fourthNum && firstNum)
+            window.alert("the smallest integer is" + fifthNum)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
