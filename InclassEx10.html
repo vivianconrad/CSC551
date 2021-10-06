@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!-- Inclass Ex9-2 -->
+<!-- By: Samer Al-khateeb-->
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inclass Ex9-2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/CSS">
+    <script src="processOrder.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Creighton Restaurant</h1>
+        <p>Welcome to our <span id="highlight">fictitious restaurant</span>. Please customize your order and click the submit button. <span>We will call you to pick up your order once it is ready!</span></p>
+    </header>
+
+
+
+    <p><img id="burger" src="background_image1.jpg" class="background_images" alt="First positioned image" /></p>
+
+    <p><img id="pizza" src="background_image2.jpeg" class="background_images" alt="Second positioned image" /></p>
+
+    <p><img id="salad" src="background_image3.jpg" class="background_images" alt="Third positioned image" /></p>
+
+    <form method="post" action="#" autocomplete="on">
+        <form id="myform">
+            <h1>Creighton Restaurant</h1>
+            <div class="area">
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" name="firstname" autofocus placeholder="John" />
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="lastname" autofocus placeholder="Doe" />
+                        <label for="lastname">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col2">
+                        <input type="tel" name="phone" id="phone" placeholder="(###) ###-####" pattern="\(\d{3}\) +\d{3}-\d{4}" />
+                        <label for="phone">Phone</label>
+                        <p>Please enter your phone number so we can give you a call once your order is ready for pick up!</p>
+                    </div>
+                    <div class="col2">
+                        <input id="email" type="email" placeholder="email@domain.com" multiple/>
+                        <label for="email">Email</label>
+                        <p>Please enter your email address to receive your order confirmation receipt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area">
+                <div class="row">
+                    <input type="text" id="streetName" placeholder="221B Baker Street" multiple/>
+                    <label for="streetName">Street Address</label>
+                </div>
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" id="addressLn2" placeholder="Apartment, suite, etc." multiple/>
+                        <label for="addressLn2">Street Address</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="city" placeholder="London" multiple/>
+                        <label for="city">City:</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" id="state" placeholder="NE" multiple/>
+                        <label for="state">State/Province</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="zip" placeholder="00000" multiple/>
+                        <label for="zip">Zip/Postal Code</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area">
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" id="orderSelection" placeholder="Select from the menu" list="menu" />
+                        <label for="orderSelection">Select Your Order:</label>
+                        <datalist id="menu">
+						  <option value = "Burger Sandwich">
+						  <option value = "Cheese Pizza">
+						  <option value = "Caesar Salad">  
+					  </datalist>
+                    </div>
+                    <div class="col2">
+                        <input id="numofGreenTea" type="number" min="0" max="7" step="1" value="0" />
+                        <label for="numofGreenTea">Enter the number of Green Teas you would like:</label> (Enter a number between 0 and 7)
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Please tell us which website you used to hear about us:
+						<input id="url" type = "url" placeholder = "http://www.domainname.com" /> 
+				 </label>
+                </div>
+            </div>
+
+            <div class="area">
+                <div class="ckeckarea">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
+                    <label for="checkbox1">Check this box if order info and sending info are the same.</label>
+                </div>
+
+
+                <div class="row">
+                    <input type="submit" value="Submit" onclick="getFormInfo();" class="btn">
+                    <input type="reset" value="Clear" class="btn">
+
+                </div>
+            </div>
+        </form>
+
+
+        <footer>
+            <p>If you have a question about our restaurant or have a suggestion to improve our website please call us on 1(800) 000-0000. </p>
+
+            <p>You can also drop by as we are located on <span id="special">Dodge St & N 24th St, Omaha, NE 68131</span>. </p>
+        </footer>
+</body>
+
+</html>
